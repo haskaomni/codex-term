@@ -1,13 +1,13 @@
-# codex-web
+# codex-term
 
 Run Codex CLI in your browser from any local directory.
 
 ```bash
 cd /path/to/project
-codex-web .
+codex-term .
 ```
 
-`codex-web` starts a local-only web terminal, opens your browser, and launches `codex` in the directory you pass in.
+`codex-term` starts a local-only web terminal, opens your browser, and launches `codex` in the directory you pass in.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ codex-web .
 ## Install
 
 ```bash
-npm install -g codex-web
+npm install -g codex-term
 ```
 
 Or run from a local checkout:
@@ -30,24 +30,24 @@ pnpm dev
 ## Usage
 
 ```bash
-codex-web [directory]
+codex-term [directory]
 ```
 
 Examples:
 
 ```bash
-codex-web .
-codex-web ~/src/my-project
-codex-web /absolute/path/to/project
+codex-term .
+codex-term ~/src/my-project
+codex-term /absolute/path/to/project
 ```
 
-The server binds to `127.0.0.1` by default and chooses a random available port. Keep the terminal process running while using Codex Web; press `Ctrl+C` to stop it.
+The server binds to `127.0.0.1` by default and chooses a random available port. Keep the terminal process running while using Codex Term; press `Ctrl+C` to stop it.
 
 ## Options
 
 ```bash
-codex-web --help
-codex-web . --no-open
+codex-term --help
+codex-term . --no-open
 ```
 
 Environment variables:
@@ -65,7 +65,7 @@ Apache-2.0
 
 ## Third Party Notices
 
-codex-web uses the following open source projects:
+codex-term uses the following open source projects:
 
 - [wterm](https://github.com/vercel-labs/wterm) (`@wterm/core`, `@wterm/dom`, `@wterm/react`) - Apache-2.0
 - [node-pty](https://github.com/microsoft/node-pty) - MIT
@@ -73,4 +73,4 @@ codex-web uses the following open source projects:
 - [React](https://github.com/facebook/react) - MIT
 - [ws](https://github.com/websockets/ws) - MIT
 
-codex-web is not affiliated with OpenAI or Vercel.
+codex-term is not affiliated with OpenAI or Vercel.

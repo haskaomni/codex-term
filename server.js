@@ -8,8 +8,8 @@ import * as pty from "node-pty";
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.HOST || "127.0.0.1";
 const requestedPort = Number.parseInt(process.env.PORT || "0", 10);
-const targetDir = process.env.CODEX_WEB_CWD || process.cwd();
-const shouldOpen = process.env.CODEX_WEB_NO_OPEN !== "1";
+const targetDir = process.env.CODEX_TERM_CWD || process.cwd();
+const shouldOpen = process.env.CODEX_TERM_NO_OPEN !== "1";
 
 const app = next({ dev, hostname, port: requestedPort || 3000, dir: process.cwd(), turbopack: dev });
 const handle = app.getRequestHandler();
@@ -102,7 +102,7 @@ app.prepare().then(() => {
     const address = server.address();
     const port = typeof address === "object" && address ? address.port : requestedPort;
     const url = `http://${hostname}:${port}`;
-    console.log("\nCodex Web is running");
+    console.log("\nCodex Term is running");
     console.log(`  directory: ${targetDir}`);
     console.log(`  url:       ${url}`);
     console.log("\nKeep this terminal open. Press Ctrl+C to stop.\n");

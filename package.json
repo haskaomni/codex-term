@@ -1,14 +1,14 @@
 {
-  "name": "codex-web",
+  "name": "codex-term",
   "version": "0.1.0",
   "private": false,
   "description": "Run Codex CLI in your browser from any local directory.",
   "type": "module",
   "bin": {
-    "codex-web": "./bin/codex-web.js"
+    "codex-term": "./bin/codex-term.js"
   },
   "scripts": {
-    "dev": "node ./bin/codex-web.js . --no-open",
+    "dev": "node ./bin/codex-term.js . --no-open",
     "type-check": "tsc --noEmit"
   },
   "keywords": [
@@ -41,11 +41,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/haskaomni/codex-web.git"
+    "url": "https://github.com/haskaomni/codex-term.git"
   },
-  "homepage": "https://github.com/haskaomni/codex-web#readme",
+  "homepage": "https://github.com/haskaomni/codex-term#readme",
   "bugs": {
-    "url": "https://github.com/haskaomni/codex-web/issues"
+    "url": "https://github.com/haskaomni/codex-term/issues"
   },
   "files": [
     "app",
