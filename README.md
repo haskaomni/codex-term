@@ -62,3 +62,15 @@ This tool runs Codex with the same local permissions as your shell. It is design
 ## License
 
 Apache-2.0
+
+## Third Party Notices
+
+codex-web uses the following open source projects:
+
+- [wterm](https://github.com/vercel-labs/wterm) (`@wterm/core`, `@wterm/dom`, `@wterm/react`) - Apache-2.0
+- [node-pty](https://github.com/microsoft/node-pty) - MIT
+- [Next.js](https://github.com/vercel/next.js) - MIT
+- [React](https://github.com/facebook/react) - MIT
+- [ws](https://github.com/websockets/ws) - MIT
+
+codex-web is not affiliated with OpenAI or Vercel.
