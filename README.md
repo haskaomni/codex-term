@@ -9,6 +9,8 @@ codex-term .
 
 `codex-term` starts a local-only web terminal, opens your browser, and launches `codex` in the directory you pass in.
 
+![codex-term screenshot](assets/codex-term-screenshot.png)
+
 ## Requirements
 
 - Node.js 20+
@@ -74,3 +76,8 @@ codex-term uses the following open source projects:
 - [ws](https://github.com/websockets/ws) - MIT
 
 codex-term is not affiliated with OpenAI or Vercel.
+
+## Links
+
+- X: [@iamai_omni](https://x.com/iamai_omni)
+- Sponsored with tokens by [VibeShell](https://vibeshell.ai/)
