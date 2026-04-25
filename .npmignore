@@ -1,0 +1,4 @@
+.next
+coverage
+*.tsbuildinfo
+.env*
